@@ -186,8 +186,178 @@ class homeScreenState extends State<homeScreen>{
                 ),
                 Expanded(
                   flex: 2,
-                    child: Container(
-                      color: Colors.purple,
+                    child: Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            flex: 1,
+                              child: Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text('Find your jobs',style: GoogleFonts.duruSans(fontSize: 18,color: Colors.black),),
+                              )
+                          ),
+                          Expanded(
+                            flex: 6,
+                              child:Row(
+                                children: [
+                                  Expanded(
+                                      child: Container(
+                                        height: MediaQuery.of(context).size.height,
+                                        child: Card(
+                                          color: Color(0xffB9E5F4).withOpacity(0.9),
+                                          shape: RoundedRectangleBorder(
+                                            side: BorderSide(color: Colors.white70, width: 1),
+                                            borderRadius: BorderRadius.circular(10),
+                                          ),
+                                         // margin: EdgeInsets.all(20.0),
+                                          child: Container(
+                                            child: Column(
+                                              children: <Widget>[
+                                                Expanded(
+                                                  flex: 5,
+                                                    child:  CircleAvatar(
+                                                      radius: 35,
+                                                      backgroundColor: Colors.white,
+                                                      child: IconButton(
+                                                        icon: Icon(CupertinoIcons.home),
+                                                        iconSize: 48,
+                                                        onPressed: () {
+                                                          setState(() {
+                                                            print('icon clicked');
+                                                          });
+                                                        },
+                                                      ),
+                                                    ),
+                                                ),
+                                                Expanded(
+                                                  flex: 1,
+                                                    child: Text('45k',style: GoogleFonts.duruSans(fontSize: 15,color: Colors.black,fontWeight: FontWeight.w900, // light
+                                                      fontStyle: FontStyle.normal,),), ),
+
+
+
+
+                                                Expanded(
+                                                  flex: 1,
+                                                    child: Text('Remote jobs',style: GoogleFonts.duruSans(fontSize: 12,color: Colors.black),))
+
+                                              ],
+                                            ),
+                                          ),
+                                      ),
+                                      )
+                                  ),
+                                  Expanded(
+                                      child: Column(
+                                        children: [
+                                          Expanded(
+                                              child: Card(
+                                                color: Color(0xffB9E5F4).withOpacity(0.9),
+                                                shape: RoundedRectangleBorder(
+                                                  side: BorderSide(color: Colors.white70, width: 1),
+                                                  borderRadius: BorderRadius.circular(10),
+                                                ),
+                                                // margin: EdgeInsets.all(20.0),
+                                                child: Container(
+                                                  child: Row(
+                                                    children: <Widget>[
+                                                      Expanded(
+                                                        flex: 2,
+                                                        child:  CircleAvatar(
+                                                          radius: 15,
+                                                          backgroundColor: Colors.white,
+                                                          child: IconButton(
+                                                            icon: Icon(CupertinoIcons.clock_fill),
+                                                            iconSize: 28,
+                                                            onPressed: () {
+                                                              setState(() {
+                                                                print('icon clicked');
+                                                              });
+                                                            },
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      Column(
+                                                        children: [
+                                                          Expanded(
+                                                            flex: 1,
+                                                            child: Text('45k',style: GoogleFonts.duruSans(fontSize: 15,color: Colors.black,fontWeight: FontWeight.w900, // light
+                                                              fontStyle: FontStyle.normal,),), ),
+
+
+
+
+                                                          Expanded(
+                                                              flex: 1,
+                                                              child: Text('Part Time',style: GoogleFonts.duruSans(fontSize: 12,color: Colors.black),))
+
+                                                        ],
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                          ),
+                                          Expanded(
+                                              child: Card(
+                                                color: Color(0xffB9E5F4).withOpacity(0.9),
+                                                shape: RoundedRectangleBorder(
+                                                  side: BorderSide(color: Colors.white70, width: 1),
+                                                  borderRadius: BorderRadius.circular(10),
+                                                ),
+                                                // margin: EdgeInsets.all(20.0),
+                                                child: Container(
+                                                  child: Row(
+                                                    children: <Widget>[
+                                                      Expanded(
+                                                        flex: 2,
+                                                        child:  CircleAvatar(
+                                                          radius: 15,
+                                                          backgroundColor: Colors.white,
+                                                          child: IconButton(
+                                                            icon: Icon(CupertinoIcons.clock),
+                                                            iconSize: 28,
+                                                            onPressed: () {
+                                                              setState(() {
+                                                                print('icon clicked');
+                                                              });
+                                                            },
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      Column(
+                                                        children: [
+                                                          Expanded(
+                                                            flex: 1,
+                                                            child: Text('45k',style: GoogleFonts.duruSans(fontSize: 15,color: Colors.black,fontWeight: FontWeight.w900, // light
+                                                              fontStyle: FontStyle.normal,),), ),
+
+
+
+
+                                                          Expanded(
+                                                              flex: 1,
+                                                              child: Text('Full Time',style: GoogleFonts.duruSans(fontSize: 12,color: Colors.black),))
+
+                                                        ],
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                          )
+
+                                        ],
+                                      )
+                                  )
+                                ],
+                              )
+                          )
+                        ],
+
+
+                      ),
                     )
                 ),
                 Expanded(
