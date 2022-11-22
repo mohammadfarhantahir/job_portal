@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'homeScreen.dart';
+
 
 
 class screen1 extends StatefulWidget{
@@ -66,6 +68,7 @@ class screen1State extends State<screen1> with TickerProviderStateMixin{
                                       icon: Icon(Icons.search,color: Colors.white,),
                                       onPressed: () {
                                         print('search clicked');
+                                        movetohomescreen(context);
 
                                       },
                                     ),
@@ -107,5 +110,10 @@ class screen1State extends State<screen1> with TickerProviderStateMixin{
       ),
     );
   }
+
+}
+
+void movetohomescreen(BuildContext context){
+  Navigator.of(context).push(MaterialPageRoute(builder: (context) => homeScreen()));
 
 }
