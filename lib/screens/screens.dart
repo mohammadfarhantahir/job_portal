@@ -42,7 +42,7 @@ class screen1State extends State<screen1> with TickerProviderStateMixin{
                               flex: 3,
                               child:  Align(
                                   alignment: Alignment.bottomCenter,
-                                  child: Text('Find your dream job here',style: GoogleFonts.balthazar(fontSize: 28,color: Colors.black54,wordSpacing: 2),)
+                                  child: Text('Find your dream job here',style: GoogleFonts.balthazar(fontSize: 38,color: Colors.black,wordSpacing: 2),)
                               )
                           ),
                           Expanded(
@@ -50,7 +50,16 @@ class screen1State extends State<screen1> with TickerProviderStateMixin{
                               child:Align(
                                 alignment: Alignment.bottomCenter,
                                 child: Container(
-                                  color: Colors.white,
+                                  decoration: const BoxDecoration(
+                                    boxShadow: <BoxShadow>[
+                                      BoxShadow(
+                                          color: Colors.black45,
+                                          blurRadius: 15.0,
+                                          offset: Offset(0.0, 1.75)
+                                      )
+                                    ],
+                                  ),
+
                                   child:  CircleAvatar(
                                     backgroundColor: Colors.black,
                                     child:  IconButton(
@@ -81,6 +90,7 @@ class screen1State extends State<screen1> with TickerProviderStateMixin{
 
                 //color: Colors.green,
                     decoration: new BoxDecoration(
+
                      // color: Colors.white,
                       image: new DecorationImage(
                         image: new AssetImage('assets/images/man.png'),
